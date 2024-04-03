@@ -81,4 +81,4 @@ app.listen(env.app.port, async function appMain() {
     );
 });
 //node_Scheduler, 매일 4시에 mysqlCron 실행
-schedule.scheduleJob('15 * * * * *', mysqlCron); //'0 4 * * *'
+schedule.scheduleJob('0 4 * * *', mysqlCron); //'0 4 * * *'
